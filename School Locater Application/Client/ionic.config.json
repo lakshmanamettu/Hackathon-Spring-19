@@ -1,0 +1,7 @@
+{
+  "name": "GamersApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

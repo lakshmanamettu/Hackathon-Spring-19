@@ -1,0 +1,40 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+    <div class="flb">
+      <div class="Aligner-item Aligner-item--top"></div>
+      <img src="../../assets/imgs/5fc8b569-d76f-4d5d-809a-6dc6968e28f7.gif">
+      <div class="Aligner-item Aligner-item--bottom"></div>
+    </div>
+  </div>
+
+<ion-header>
+  <ion-navbar style="text-align: center" color="dark">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/alasql/0.4.11/alasql.min.js"></script>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label>Narrow by Tag</ion-label>
+    <ion-select [(ngModel)]="category" #categorysearch>
+      <ion-option value="65211">65211</ion-option>
+      <ion-option value="64110">64110</ion-option>
+      <ion-option value="64093">64093</ion-option>
+      <ion-option value="66045">66045</ion-option>
+    </ion-select>
+  </ion-item>
+  <div style="text-align: center">
+  <button ion-button medium type="submit" (click)="search()" round >search</button>
+  </div>
+
+  <div *ngFor="let result of results"  >
+      <ion-card>
+          <ion-card-header style="text-align: center">
+              <h4 style="color: white" >Organization: {{result.Organization}}</h4>
+          </ion-card-header>
+          <ion-card-content >
+          </ion-card-content>
+        </ion-card>
+</div>
+
+</ion-content>

@@ -1,0 +1,61 @@
+
+<ion-header>
+
+<ion-navbar color="dark">
+  <ion-title>Register</ion-title>
+</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+          <div style="text-align: center">
+            <img src="https://camu.in/assets/img/avatar1.svg" style="width:250px;height: 250px;">
+          </div>
+  <div class="login-box">
+
+    <ion-list >
+
+      <ion-item>
+        <ion-label floating>EMail Id</ion-label>
+        <ion-input  type="text"  #username ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>First Name</ion-label>
+        <ion-input  type="text" #firstname ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Last Name</ion-label>
+        <ion-input  type="text" #lastname ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Gender</ion-label>
+        <ion-input  type="text" #gender ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Age</ion-label>
+        <ion-input  type="text" #age ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input  type="password" #password ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Confirm Password</ion-label>
+        <ion-input  type="password"  #confirmPwd ></ion-input>
+      </ion-item>
+    </ion-list>
+
+  </div>
+
+  <div id="homebuttons" style="text-align: center">
+  
+    <button ion-button   type="submit" (click)="register()" style="width:100px" round>Register</button>
+    <button ion-button   type="submit" (click)="login()" style="width:100px" round>Login</button></div>
+
+</ion-content>
