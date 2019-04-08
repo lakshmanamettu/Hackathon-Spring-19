@@ -32,6 +32,9 @@ In About Page there is Small Description About Project
 
 In Contact Page Team Members Details are Present.
 
+# Presentation Link :
+https://docs.google.com/presentation/d/1AkqqxaBR-_R0kUrP0TthNOLMflM7KVBnpcWOdFrSaIQ/edit#slide=id.p
+
 # YouTube Link :
 
 
